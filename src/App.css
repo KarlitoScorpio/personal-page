@@ -100,6 +100,7 @@
   cursor: pointer;
   background: transparent;
   text-decoration: none;
+  color: white;
   transition: 0.2s ease-in-out;
 }
 
