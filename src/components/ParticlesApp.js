@@ -67,7 +67,7 @@ const ParticlesApp = () => {
                             enable: true,
                             area: 100
                         },
-                        value: 10
+                        value: 15
                     },
                     opacity: {
                         animation: {
