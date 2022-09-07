@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: 'Lucida Grande', monospace;
+  width: 100vw;
+  height: 100vh;
+}
+
+@font-face {
+  font-family: "POLYA";
+  src: local("POLYA"),
+    url("./fonts/POLYA.otf") format("opentype");
+}
