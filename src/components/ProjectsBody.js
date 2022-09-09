@@ -19,7 +19,7 @@ function ProjectsBody() {
     <div className="projects_wrapper">
         <div className="project" ref={projectRef}>
           <div className="project_text">
-            {isVisible ? "" : <p className="project_left_name">Clicker Master</p>}
+            {isVisible ? "" : <a href="https://github.com/KarlitoScorpio/clicker-master" className="project_left_name" target="_blank" rel="noreferrer">Clicker Master</a>}
             {isVisible ? "" : <p className="project_left_type">Game</p>}
             {isVisible ? "" : <p className="project_left_about">Has adaptive design, supports English and Croatian language and has automatic table filling and sorting.</p>}
           </div>
@@ -30,7 +30,7 @@ function ProjectsBody() {
         {window.innerWidth > 768 ?
           <div className="project" ref={projectRef}>
             <div className="project_text">
-              {isVisible ? "" : <p className="project_right_name">Batak</p>}
+              {isVisible ? "" : <a href="https://github.com/KarlitoScorpio/batak" className="project_right_name" target="_blank" rel="noreferrer">Batak</a>}
               {isVisible ? "" : <p className="project_right_type">Game</p>}
               {isVisible ? "" : <p className="project_right_about">Has adaptive design, supports English and Croatian language and has automatic table filling and sorting.</p>}
             </div>
@@ -41,7 +41,7 @@ function ProjectsBody() {
           :
           <div className="project project_margin_top" ref={projectRef1}>
             <div className="project_text">
-              {isVisible1 ? <p className="project_right_name">Batak</p> : ""}
+              {isVisible1 ? <a href="https://github.com/KarlitoScorpio/batak" className="project_right_name" target="_blank" rel="noreferrer">Batak</a> : ""}
               {isVisible1 ? <p className="project_right_type">Game</p> : ""}
               {isVisible1 ? <p className="project_right_about">Has adaptive design, supports English and Croatian language and has automatic table filling and sorting.</p> : ""}
             </div>
@@ -52,7 +52,7 @@ function ProjectsBody() {
           }
         <div className="project project_margin_top" ref={projectRef}>
           <div className="project_text">
-            {isVisible ? <p className="project_left_name">Password Generator</p> : ""}
+            {isVisible ? <a href="https://github.com/KarlitoScorpio/password-generator" className="project_left_name" target="_blank" rel="noreferrer">Password Generator</a> : ""}
             {isVisible ? <p className="project_left_type">App</p> : ""}
             {isVisible ? <p className="project_left_about">Has responsive design, generates random 10 character passwords, background is alive, and has copy to clipboard function.</p> : ""}
           </div>

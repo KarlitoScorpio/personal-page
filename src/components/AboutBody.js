@@ -29,7 +29,7 @@ function AboutBody() {
                     <br></br>
                     {isVisible ? <li className="li3">At university he got a passion for web design and web development. HTML and CSS became simple to him so he became motivated and continued learning. Soon after he started learning Javascript and has no intentions to stop.</li> : ""}
                     <br></br>
-                    {isVisible ? <li className="li4">Today, run by his passion for web development, he works hard every day to get himself a job as front-end web developer. Recently he started learning React.</li> : ""}
+                    {isVisible ? <li className="li4">Today, run by his passion for web development, he works hard every day to be as best front-end web developer as possible. Recently he started learning React.</li> : ""}
                     <br></br>
                     {isVisible ? <li className="li5">What Karlo wants to tell you with his story?</li> : ""}
                     <br></br>

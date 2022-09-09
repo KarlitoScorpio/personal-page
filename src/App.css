@@ -355,6 +355,7 @@
   right: 300px;
   opacity: 0;
   font-size: 1.25em;
+  color: white;
   animation: project_left_animation 1s ease-out forwards;
 }
 
@@ -393,6 +394,7 @@
   left: 300px;
   opacity: 0;
   font-size: 1.25em;
+  color: white;
   animation: project_right_animation 1s ease-in-out forwards;
 }
 
