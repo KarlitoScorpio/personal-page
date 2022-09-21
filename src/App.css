@@ -12,12 +12,7 @@
 }
 
 ::-webkit-scrollbar{
-  width: 10px;
-}
- 
-::-webkit-scrollbar-thumb{
-  background: #00ABFF;
-  border-radius: 5px;
+  width: 0px;
 }
 
 .particles{
@@ -202,6 +197,26 @@
 .letter_jump:hover{
   -webkit-text-fill-color: white;
   bottom: 7px;
+}
+
+.social_media{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.linkedin, .github{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.github{
+  filter: invert(100%);
 }
 
 .about_wrapper{
@@ -596,7 +611,7 @@
     left: 20px;
   }
   .navbar_links{
-    width: 200px;
+    width: 250px;
   }
   .navbar_link{
     font-size: 1em;

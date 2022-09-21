@@ -1,6 +1,6 @@
 import React from 'react'
 import MyPicture from '../assets/ja.png'
-import { useInView } from 'react-intersection-observer';
+import { useInView } from 'react-intersection-observer'
 
 function AboutBody() {
 
