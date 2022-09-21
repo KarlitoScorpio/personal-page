@@ -552,7 +552,7 @@
   .about_wrapper{
     flex-direction: column-reverse;
     align-items: center;
-    height: 125%;
+    height: 150%;
   }
   .aboutbody_picture, .aboutbody_text{
     height: 100%;
