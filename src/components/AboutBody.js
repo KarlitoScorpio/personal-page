@@ -5,7 +5,7 @@ import { useInView } from 'react-intersection-observer'
 function AboutBody() {
 
     const { ref: projectRef, inView: isVisible } = useInView({
-        threshold: 0
+        threshold: 1
     })
         
   return (
