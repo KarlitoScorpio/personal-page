@@ -2,63 +2,82 @@ import React from 'react'
 import ClickerMaster from '../assets/ClickerMaster.png'
 import Batak from '../assets/Batak.png'
 import PasswordGenerator from '../assets/PasswordGenerator.png'
+import FunFacts from '../assets/FunFacts.png'
 import { useInView } from 'react-intersection-observer';
 
 function ProjectsBody() {
 
-  const { ref: projectRef, inView: isVisible } = useInView({
-    threshold: 0
+  const { ref: projectRef1, inView: isVisible1 } = useInView({
+    threshold: 0.5
   })
 
-  const { ref: projectRef1, inView: isVisible1 } = useInView({
-    threshold: 0
+  const { ref: projectRef2, inView: isVisible2 } = useInView({
+    threshold: 0.5
+  })
+
+  const { ref: projectRef3, inView: isVisible3 } = useInView({
+    threshold: 0.5
+  })
+
+  const { ref: projectRef4, inView: isVisible4 } = useInView({
+    threshold: 0.5
   })
 
   return (
     <>
-    <div className="projects_wrapper">
-        <div className="project" ref={projectRef}>
+      <div className="projects_wrapper">
+        <div className="project" ref={projectRef1}>
           <div className="project_text">
-            {isVisible ? "" : <a href="https://github.com/KarlitoScorpio/clicker-master" className="project_left_name" target="_blank" rel="noreferrer">Clicker Master</a>}
-            {isVisible ? "" : <p className="project_left_type">Game</p>}
-            {isVisible ? "" : <p className="project_left_about">Has adaptive design, supports English and Croatian language and has automatic table filling and sorting.</p>}
+            {isVisible1 ? <a href="https://github.com/KarlitoScorpio/clicker-master" className="project_left_name" target="_blank" rel="noreferrer">Clicker Master</a> : ""}
+            {isVisible1 ? <p className="project_left_type">Game</p> : ""}
+            {isVisible1 ? <p className="project_left_about">Has adaptive design, supports English and Croatian language and has automatic table filling and sorting.</p> : ""}
           </div>
           <div className="project_image">
-            {isVisible ? "" : <img src={ClickerMaster} alt="project 1" className="project_img project_left_image"></img>}
+            {isVisible1 ? <img src={ClickerMaster} alt="project 1" className="project_img project_left_image"></img> : ""}
           </div>        
         </div>
         {window.innerWidth > 768 ?
-          <div className="project" ref={projectRef}>
+          <div className="project" ref={projectRef2}>
             <div className="project_text">
-              {isVisible ? "" : <a href="https://github.com/KarlitoScorpio/batak" className="project_right_name" target="_blank" rel="noreferrer">Batak</a>}
-              {isVisible ? "" : <p className="project_right_type">Game</p>}
-              {isVisible ? "" : <p className="project_right_about">Has adaptive design, supports English and Croatian language and has automatic table filling and sorting.</p>}
+              {isVisible2 ? <a href="https://github.com/KarlitoScorpio/batak" className="project_right_name" target="_blank" rel="noreferrer">Batak</a> : ""}
+              {isVisible2 ? <p className="project_right_type">Game</p> : ""}
+              {isVisible2 ? <p className="project_right_about">Has adaptive design, supports English and Croatian language and has automatic table filling and sorting.</p> : ""}
             </div>
             <div className="project_image">
-              {isVisible ? "" : <img src={Batak} alt="project 2" className="project_img project_right_image"></img>}
+              {isVisible2 ? <img src={Batak} alt="project 2" className="project_img project_right_image"></img> : ""}
             </div>
           </div>
-          :
-          <div className="project project_margin_top" ref={projectRef1}>
+        :
+          <div className="project project_margin_top" ref={projectRef2}>
             <div className="project_text">
-              {isVisible1 ? <a href="https://github.com/KarlitoScorpio/batak" className="project_right_name" target="_blank" rel="noreferrer">Batak</a> : ""}
-              {isVisible1 ? <p className="project_right_type">Game</p> : ""}
-              {isVisible1 ? <p className="project_right_about">Has adaptive design, supports English and Croatian language and has automatic table filling and sorting.</p> : ""}
+              {isVisible2 ? <a href="https://github.com/KarlitoScorpio/batak" className="project_right_name" target="_blank" rel="noreferrer">Batak</a> : ""}
+              {isVisible2 ? <p className="project_right_type">Game</p> : ""}
+              {isVisible2 ? <p className="project_right_about">Has adaptive design, supports English and Croatian language and has automatic table filling and sorting.</p> : ""}
             </div>
             <div className="project_image">
-              {isVisible1 ? <img src={Batak} alt="project 2" className="project_img project_right_image"></img> : ""}
+              {isVisible2 ? <img src={Batak} alt="project 2" className="project_img project_right_image"></img> : ""}
             </div>
           </div>
-          }
-        <div className="project project_margin_top" ref={projectRef}>
+        }
+        <div className="project project_margin_top" ref={projectRef3}>
           <div className="project_text">
-            {isVisible ? <a href="https://github.com/KarlitoScorpio/password-generator" className="project_left_name" target="_blank" rel="noreferrer">Password Generator</a> : ""}
-            {isVisible ? <p className="project_left_type">App</p> : ""}
-            {isVisible ? <p className="project_left_about">Has responsive design, generates random 10 character passwords, background is alive, and has copy to clipboard function.</p> : ""}
+            {isVisible3 ? <a href="https://github.com/KarlitoScorpio/password-generator" className="project_left_name" target="_blank" rel="noreferrer">Password Generator</a> : ""}
+            {isVisible3 ? <p className="project_left_type">App</p> : ""}
+            {isVisible3 ? <p className="project_left_about">Has responsive design, generates random 10 character passwords, background is alive, and has copy to clipboard function.</p> : ""}
           </div>
           <div className="project_image">
-            {isVisible ? <img src={PasswordGenerator} alt="project 3" className="project_img project_left_image"></img> : ""}
+            {isVisible3 ? <img src={PasswordGenerator} alt="project 3" className="project_img project_left_image"></img> : ""}
           </div>         
+        </div>
+        <div className="project project_margin_top" ref={projectRef4}>
+          <div className="project_text">
+            {isVisible4 ? <a href="https://github.com/KarlitoScorpio/fun-facts" className="project_right_name" target="_blank" rel="noreferrer">Fun Facts</a> : ""}
+            {isVisible4 ? <p className="project_right_type">App</p> : ""}
+            {isVisible4 ? <p className="project_right_about">Has responsive design made with React-Bootstrap, Fun facts are generated with Facts API by API Ninjas.</p> : ""}
+          </div>
+          <div className="project_image">
+            {isVisible4 ? <img src={FunFacts} alt="project 4" className="project_img project_right_image"></img> : ""}
+          </div>
         </div>
       </div>
     </>
