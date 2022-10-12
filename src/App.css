@@ -8,7 +8,7 @@
 }
 
 .overflow_hidden{
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 ::-webkit-scrollbar{
@@ -66,26 +66,19 @@
   width: 90px;
   height: 90px;
   cursor: pointer;
-  filter: invert(100%);
-}
-
-.logo:hover{
-  animation: logo_animation 0.3s ease-in-out;
+  filter: invert(100%) brightness(100%);
+  opacity: 0;
+  animation: logo_animation 2s forwards;
 }
 
 @keyframes logo_animation {
-  25%{
-    transform: rotate(-10deg);
-  }
-  50%{
-    transform: rotate(10deg);
-  }
-  75%{
-    transform: rotate(-10deg);
-  }
   100%{
-    transform: rotate(10deg);
+    opacity: 1;
   }
+}
+
+.logo:hover{
+  filter: invert(100%) brightness(300%);
 }
 
 .navbar_links{
@@ -103,6 +96,14 @@
   text-decoration: none;
   color: white;
   transition: 0.2s ease-in-out;
+  opacity: 0;
+  animation: navbar_link_animation 2s forwards;
+}
+
+@keyframes navbar_link_animation {
+  100%{
+    opacity: 1;
+  }
 }
 
 .navbar_link:hover{
@@ -132,6 +133,34 @@
 
 .navbar_link:visited{
   color: white;
+}
+
+.social_media{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 30px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+.linkedin, .github{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  opacity: 0;
+  animation: navbar_link_animation 2s forwards;
+}
+
+.github{
+  filter: invert(100%);
+}
+
+@keyframes navbar_link_animation {
+  100%{
+    opacity: 1;
+  }
 }
 
 .appbody_text{
@@ -199,26 +228,6 @@
 .letter_jump:hover{
   -webkit-text-fill-color: white;
   bottom: 7px;
-}
-
-.social_media{
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  width: 30px;
-  height: 60px;
-  display: flex;
-  flex-direction: column;
-}
-
-.linkedin, .github{
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.github{
-  filter: invert(100%);
 }
 
 .about_wrapper{
@@ -545,11 +554,8 @@
 }
 
 @media screen and (max-width:426px) and (min-width:376px){
-  .appbody_text{
-    font-size: 3em;
-  }
   .navbar_links{
-    width: 300px;
+    width: 250px;
   }
   .navbar_link{
     font-size: 1em;
@@ -557,14 +563,12 @@
   .logo_link{
     left: 30px;
   }
-  .navbar_links{
-    width: 250px;
-  }
   .app{
     height: 100vh;
   }
   .appbody_text{
     width: 90vw;
+    font-size: 3em;
   }
   .about_wrapper{
     flex-direction: column-reverse;
