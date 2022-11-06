@@ -23,7 +23,7 @@ function AboutBody() {
         }
         </div>
         <div className="aboutbody_text" ref={projectRef}>
-            {isVisible ? <li className="li1">Karlo Šimunec (22) is young front-end web developer from Croatia and this is his story:</li> : ""}
+            {isVisible ? <li className="li1">Karlo Šimunec (23) is young front-end web developer from Croatia and this is his story:</li> : ""}
                 <ul>
                     {isVisible ? <li className="li2">Through the elementary school and high school, he didn't understand programming and tought it'll be the last job he would ever do.</li> : ""}
                     <br></br>

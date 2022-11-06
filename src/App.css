@@ -254,7 +254,7 @@
   bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
-  width: 600px;
+  width: 650px;
   height: 500px;
   z-index: 2;
   animation: me_animation 3s forwards;
