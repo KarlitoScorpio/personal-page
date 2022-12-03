@@ -382,6 +382,7 @@
   opacity: 0;
   font-size: 1.25em;
   color: white;
+  text-align: center;
   animation: project_left_animation 1s ease-out forwards;
 }
 
@@ -421,6 +422,7 @@
   opacity: 0;
   font-size: 1.25em;
   color: white;
+  text-align: center;
   animation: project_right_animation 1s ease-in-out forwards;
 }
 
@@ -553,6 +555,18 @@
   }
 }
 
+@media screen and (max-width:610px) and (min-width:542px){
+  .appbody_text{
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width:542px) and (min-width:426px){
+  .appbody_text{
+    font-size: 3.6em;
+  }
+}
+
 @media screen and (max-width:426px) and (min-width:376px){
   .navbar_links{
     width: 250px;
@@ -587,7 +601,7 @@
     justify-content: center;
     top: 4.5vh;
     padding-right: 0vw;
-    font-size: 0.75em;
+    font-size: 0.65em;
   }
   .my_picture{
     width: 400px;
@@ -631,7 +645,7 @@
   .about_wrapper{
     flex-direction: column-reverse;
     align-items: center;
-    height: 100%;
+    height: 150%;
   }
   .aboutbody_picture, .aboutbody_text{
     height: 100%;
@@ -646,7 +660,7 @@
     justify-content: center;
     top: 4.5vh;
     padding-right: 0vw;
-    font-size: 0.75em;
+    font-size: 0.65em;
   }
   .my_picture{
     width: 500px;
@@ -687,7 +701,7 @@
   .about_wrapper{
     flex-direction: column-reverse;
     align-items: center;
-    height: 100%;
+    height: 150%;
   }
   .aboutbody_picture, .aboutbody_text{
     height: 100%;
@@ -701,7 +715,7 @@
     justify-content: center;
     top: 4.5vh;
     padding-right: 0vw;
-    font-size: 0.7em;
+    font-size: 0.6em;
   }
   .my_picture{
     width: 500px;
